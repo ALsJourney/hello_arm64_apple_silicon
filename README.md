@@ -7,5 +7,5 @@ as hello_arm.s -o hello_arm.o
 ```
 ## Command used to link to executable
 ```bash
-ld hello_arm.o -o hello -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path -e _start -arch arm64`
+ld hello_arm.o -o hello -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path` -e _start -arch arm64
 ```
